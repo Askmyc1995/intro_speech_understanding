@@ -1,4 +1,4 @@
-'''
+''
 This is the homework for the very first lecture of 
 Introduction to Speech Understanding.
 
@@ -12,6 +12,8 @@ string1 should be changed from "change this" to "test"
 string2 should be changed from "change this" to "hello"
 '''
 
-string1 = "change this"
+string1 = "test"
 
-string2 = "change this"
+string2 = "hello"
+
+
