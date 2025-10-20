@@ -1,5 +1,10 @@
 
 def words2characters(words):
+    characters=[]
+    for word in words:
+        for character in str(word):
+            characters.append(character)
+    return characters
     """
     This function converts a list of words into a list of characters.
 
@@ -14,5 +19,4 @@ def words2characters(words):
     example, if words==['hello', 1.234, True], then characters should be
     ['h', 'e', 'l', 'l', 'o', '1', '.', '2', '3', '4', 'T', 'r', 'u', 'e']
     """
-    return []
 
