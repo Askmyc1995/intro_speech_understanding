@@ -12,7 +12,22 @@ def next_birthday(date, birthdays):
     birthday - the next day, after given date, on which somebody has a birthday
     list_of_names - list of all people with birthdays on that date
     '''
-    birthday = (1,1)
+    #birthday = (1,1)
     list_of_names = []
+    month,day = date
+
+    if len(birthdays)==0:
+        raise RuntimeError("No Birthdays")
+    
+    while (month,day) not in birthdays:
+        day=day+1
+        if day==32:
+            day=1
+            month=month+1
+            if month==13:
+                month=1
+        
+    birthday = (month,day)
+    list_of_names = birthdays[birthday]
     return birthday, list_of_names
     
